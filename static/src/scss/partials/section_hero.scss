@@ -1,0 +1,18 @@
+.section_hero {
+    background: #000;
+    color: white;
+    height: 100vh;
+
+    &__title {
+        position: absolute;
+        right: 45px;
+        bottom: 230px;
+        font-size: 235px;
+    }
+
+    & .row {
+        height: 100%;
+    }
+
+
+}
