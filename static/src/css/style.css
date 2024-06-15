@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/urbanist-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/urbanist-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: black;
+  font: 1rem/1.1 var(--font-family);
+  margin: 0;
+  padding-top: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: inherit;
+}
+
+figure,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+  text-indent: -9999px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+input:focus,
+input {
+  font-size: 16px;
+}
+
+*:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+:root {
+  --bg-primary: #fff;
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family: "Urbanist";
+  --padding: 10px;
+}
