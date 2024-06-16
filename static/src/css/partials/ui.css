@@ -3,5 +3,13 @@
   --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --font-family: "Urbanist";
-  --padding: 10px;
+  --grid-width: 1600px;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: var(--grid-width);
+  padding: 0 20px;
+  position: relative;
+  width: 100%;
 }

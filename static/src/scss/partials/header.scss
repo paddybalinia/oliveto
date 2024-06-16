@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    color: white;
+    width: 100%;
+    z-index: 2;
+
+    &__logo {
+        fill: white;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        font-size: 25px;
+        display: flex;
+        gap: 35px;
+        align-items: center;
+    }
+}

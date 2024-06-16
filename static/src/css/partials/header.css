@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  color: white;
+  width: 100%;
+  z-index: 2;
+}
+.header__logo {
+  fill: white;
+}
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__nav {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
