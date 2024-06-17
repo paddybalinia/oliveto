@@ -1,7 +1,7 @@
 :root {
     --bg-primary: #fff;
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --primary-color: #333;
+    --secondary-color: #000;
     --font-family: "Urbanist";
     --grid-width: 1600px;
 }
@@ -15,12 +15,37 @@
 
 }
 
+.pager {
+    display: flex;
+    gap: 12px;
+
+    &__a {
+        background: rgba(51, 51, 51, .3);
+        border-radius: 125px;
+        height: 8px;
+        width: 42px;
+        display: block;
+    }
+
+    &--right {
+        justify-content: flex-end;
+    }
+}
+
 //min-width: 768px
 //min-width: 1024px
 //min-width: 1440px
 
 @media (min-width: 768px) {
     // Tablet
+
+    .pager {
+        gap: 8px;
+
+        &__a {
+            width: 95px;
+        }
+    }
 }
 
 @media (min-width: 1024px) {

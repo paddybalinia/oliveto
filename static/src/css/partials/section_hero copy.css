@@ -1,0 +1,33 @@
+.section_hero {
+  background: #000;
+  color: white;
+  height: 100vh;
+}
+.section_hero__title {
+  position: absolute;
+  bottom: 230px;
+  right: 20px;
+  font-size: 75px;
+  max-width: 240px;
+}
+.section_hero .row {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .section_hero__title {
+    right: 45px;
+    font-size: 135px;
+    max-width: inherit;
+  }
+}
+@media (min-width: 1024px) {
+  .section_hero__title {
+    font-size: 185px;
+  }
+}
+@media (min-width: 1440px) {
+  .section_hero__title {
+    font-size: 235px;
+  }
+}
