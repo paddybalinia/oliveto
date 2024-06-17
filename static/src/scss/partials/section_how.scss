@@ -1,0 +1,131 @@
+.section_how {
+    background: #F3F2F0;
+
+}
+
+.item_how {
+    &__row {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__label {
+        font: 400 25px/1 var(--font-family);
+    }
+
+    &__title {
+        font: 700 42px/1 var(--font-family);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__ul {
+        flex: 1;
+        display: flex;
+        flex-basis: 50%;
+        gap: 3px;
+        flex-direction: column;
+
+        &-first {
+            flex-basis: 20%;
+        }
+    }
+
+    &__image {
+        height: 170px;
+        width: 100%;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .item_how {
+        &__row {
+            gap: 25px;
+        }
+
+        &__header {
+            position: relative;
+        }
+
+        &__label {
+            position: absolute;
+            right: 0;
+            top: 13px;
+            font-size: 30px;
+        }
+
+        &__title {
+            font-size: 47px;
+        }
+
+        &__content {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .item_how {
+        &__row {
+            gap: 30px;
+        }
+
+        &__label {
+            font-size: 32px;
+            top: 30px;
+        }
+
+        &__title {
+            font-size: 90px;
+        }
+
+        &__content {
+            font-size: 22px;
+        }
+
+        &__image {
+            height: 280px;
+        }
+    }
+}
+
+@media (min-width: 1530px) {
+    .item_how {
+        &__label {
+            font-size: 42px;
+            top: 50px;
+        }
+
+        &__title {
+            font-size: 138px;
+        }
+
+        &__content {
+            font-size: 25px;
+        }
+
+        &__image {
+            height: 368px;
+        }
+    }
+}
