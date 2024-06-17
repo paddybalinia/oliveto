@@ -5,10 +5,29 @@
 }
 .section_hero__title {
   position: absolute;
-  right: 45px;
   bottom: 230px;
-  font-size: 235px;
+  right: 20px;
+  font-size: 75px;
+  max-width: 240px;
 }
 .section_hero .row {
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .section_hero__title {
+    right: 45px;
+    font-size: 135px;
+    max-width: inherit;
+  }
+}
+@media (min-width: 1024px) {
+  .section_hero__title {
+    font-size: 185px;
+  }
+}
+@media (min-width: 1440px) {
+  .section_hero__title {
+    font-size: 235px;
+  }
 }
