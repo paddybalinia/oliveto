@@ -1,0 +1,141 @@
+.clients {
+    background: #333333;
+    color: white;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__header {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 25px;
+    }
+
+    &__label {}
+
+    &__slides {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        // gap: 20px;
+    }
+
+}
+
+.loop_left {
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 0.25s ease 0s;
+    animation: 12s linear 0s infinite normal none running slider, running;
+
+    &__li {
+        padding: 0 10px;
+    }
+}
+
+@keyframes slider {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(-100%, 0px);
+    }
+}
+
+.loop_right {
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: 30s linear 0s infinite normal none running slider2, running;
+
+    &__li {
+        border-left: 1px solid white;
+        padding: 0 10px;
+        display: inline-block;
+        white-space: nowrap;
+
+    }
+}
+
+.clients__slides-left {
+    transform: translate(-50%, 0px);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+
+    .clients {
+        padding: 40px 0;
+        gap: 40px;
+
+        &__header {
+            flex-direction: row;
+            align-items: center;
+
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .clients {
+
+        &__title {
+            font-size: 42px;
+        }
+
+        &__label {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .clients {
+
+        &__title {
+            font-size: 42px;
+        }
+
+        &__label {
+            font-size: 25px;
+        }
+    }
+}
+
+
+@keyframes slider {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        transform: translate(-100%, 0px);
+    }
+}
+
+@keyframes slider2 {
+    0% {
+        transform: translate(0%, 0px);
+    }
+
+    100% {
+        transform: translate(100%, 0px);
+    }
+}

@@ -1,0 +1,6 @@
+.books {
+  padding: 30px 0;
+}
+.books__item {
+  max-width: 300px;
+}
