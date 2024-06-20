@@ -1,0 +1,33 @@
+.expect__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.expect__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  fill: #F3F2F0;
+}
+.expect__title {
+  padding: 40px 0 20px 30px;
+  display: block;
+}
+.expect__title span {
+  display: block;
+}
+.expect__content-right {
+  font-size: 20px;
+  margin: 10px 0 30px;
+  text-align: right;
+}

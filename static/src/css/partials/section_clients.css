@@ -47,13 +47,18 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
-  -webkit-animation: 12s linear 0s infinite normal none running slider, running;
-          animation: 12s linear 0s infinite normal none running slider, running;
+  -webkit-transition: all 18s ease 0s;
+  transition: all 18s ease 0s;
+  -webkit-animation: 18s linear 0s infinite normal none running slider, running;
+          animation: 18s linear 0s infinite normal none running slider, running;
 }
 .loop_left__li {
   padding: 0 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.loop_left__img {
+  display: block;
 }
 
 @-webkit-keyframes slider {
@@ -94,6 +99,14 @@
   padding: 0 10px;
   display: inline-block;
   white-space: nowrap;
+}
+
+.clients__slides-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .clients__slides-left {

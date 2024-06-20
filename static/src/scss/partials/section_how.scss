@@ -19,11 +19,11 @@
     }
 
     &__label {
-        font: 400 25px/1 var(--font-family);
+        font: 400 21px/1 var(--font-family);
     }
 
     &__title {
-        font: 700 42px/1 var(--font-family);
+        font: 700 32px/1 var(--font-family);
     }
 
     &__content {
@@ -37,9 +37,11 @@
         flex-basis: 50%;
         gap: 3px;
         flex-direction: column;
+        font-size: 15px;
+        margin-bottom: 20px;
 
         &-first {
-            flex-basis: 20%;
+            flex-basis: 35%;
         }
     }
 

@@ -1,0 +1,37 @@
+.expect {
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -2;
+        fill: #F3F2F0;
+    }
+
+    &__title {
+        padding: 40px 0 20px 30px;
+        display: block;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__content-right {
+        font-size: 20px;
+        margin: 10px 0 30px;
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1440px) {}

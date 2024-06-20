@@ -36,11 +36,17 @@
     animation-range-end: normal;
     display: flex;
     flex-wrap: nowrap;
-    transition: all 0.25s ease 0s;
-    animation: 12s linear 0s infinite normal none running slider, running;
+    transition: all 18s ease 0s;
+    animation: 18s linear 0s infinite normal none running slider, running;
 
     &__li {
         padding: 0 10px;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    &__img {
+        display: block;
     }
 }
 
@@ -69,6 +75,11 @@
         white-space: nowrap;
 
     }
+}
+
+.clients__slides-right {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .clients__slides-left {
