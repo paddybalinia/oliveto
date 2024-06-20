@@ -25,10 +25,10 @@
   gap: 5px;
 }
 .item_how__label {
-  font: 400 25px/1 var(--font-family);
+  font: 400 21px/1 var(--font-family);
 }
 .item_how__title {
-  font: 700 42px/1 var(--font-family);
+  font: 700 32px/1 var(--font-family);
 }
 .item_how__content {
   display: -webkit-box;
@@ -53,10 +53,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 .item_how__ul-first {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
 }
 .item_how__image {
   height: 170px;

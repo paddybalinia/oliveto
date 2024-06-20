@@ -1,18 +1,20 @@
 .footer {
     background: #333;
     color: white;
-    padding: 140px 0;
-    gap: 155px;
+    padding: 30px 0;
+
 
     &-row {
         display: flex;
         flex-direction: column;
-        gap: 155px;
+        // gap: 155px;
+        gap: 30px;
     }
 
     &__row {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
         gap: 10px;
     }
@@ -26,4 +28,9 @@
     &__title {
         font-size: 42px;
     }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
 }

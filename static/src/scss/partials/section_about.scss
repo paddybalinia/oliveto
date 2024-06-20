@@ -2,17 +2,17 @@
     &__row {
         display: flex;
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 50px 20px;
         text-align: center;
-        gap: 15px;
+        gap: 10px;
     }
 
     &__text {
-        font: 400 25px/1 var(--font-family);
+        font: 400 21px/1 var(--font-family);
     }
 
     &__title {
-        font: 700 42px/1 var(--font-family);
+        font: 700 32px/1 var(--font-family);
 
     }
 }
