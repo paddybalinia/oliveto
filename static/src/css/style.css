@@ -519,10 +519,8 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 18s ease 0s;
-  transition: all 18s ease 0s;
-  -webkit-animation: 18s linear 0s infinite normal none running slider, running;
-          animation: 18s linear 0s infinite normal none running slider, running;
+  -webkit-animation: 78s linear 0s infinite normal none running slider, running;
+          animation: 78s linear 0s infinite normal none running slider, running;
 }
 .loop_left__li {
   padding: 0 10px;
