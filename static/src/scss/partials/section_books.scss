@@ -12,6 +12,10 @@
         max-width: 300px;
     }
 
+    &__data {
+        display: none;
+    }
+
     &_item {
         max-width: 300px;
         height: 300px;

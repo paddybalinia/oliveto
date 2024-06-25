@@ -9,6 +9,9 @@
 .books .swiper-slide {
   max-width: 300px;
 }
+.books__data {
+  display: none;
+}
 .books_item {
   max-width: 300px;
   height: 300px;

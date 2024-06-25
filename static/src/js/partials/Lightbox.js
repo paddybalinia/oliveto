@@ -11,8 +11,6 @@
     const Link = document.querySelectorAll("[data-lightbox]");
     const lightboxNext = document.querySelector(".lightbox__next");
 
-    lightboxNext.addEventListener("click", onButtonNext, false);
-
     for (let e = 0; e < btnClose.length; e++) {
       btnClose[e].addEventListener("click", CloseLightbox, false);
     }
@@ -29,55 +27,41 @@
   }
 
   function GetData(e) {
-    index = e.dataset.index;
-    var labData = e.querySelector(".lab__data");
-    var labImg =
-      labData.parentNode.querySelector(".lab__img").dataset.lazyload ||
-      labData.parentNode.querySelector(".lab__img").src;
-    var labTitle = labData.querySelector(".lab__title").textContent;
-    var labSubtitle = labData.querySelector(".lab__subtitle").textContent;
-    var labYear = labData.querySelector(".lab__year").textContent;
-    var labText = labData.querySelector(".lab__text").textContent;
-
-    //alert(e.dataset.vertical);
-
-    var isVetical = e.dataset.vertical ? true : false;
+    var bookData = e.parentNode.querySelector(".books__data");
+    var bookImg = bookData.parentNode.querySelector(".books_item__img").src;
+    var bookTitle = bookData.querySelector(".book__title").textContent;
+    var bookComprar = bookData.querySelector(".book__comprar").href;
+    var bookReview = bookData.querySelector(".book__reviews").href;
+    var bookText = bookData.querySelector(".book__text").textContent;
 
     updateData({
-      src: labImg,
-      title: labTitle,
-      subtitle: labSubtitle,
-      year: labYear,
-      text: labText,
-      verical: isVetical,
+      src: bookImg,
+      title: bookTitle,
+      comprar: bookComprar,
+      review: bookReview,
+      text: bookText,
     });
   }
 
   function updateData({
     src = "src",
     title = "titulo",
-    subtitle = "subtitulo",
-    year = "year",
+    comprar = "subtitulo",
+    review = "year",
     text = "text",
-    verical = false,
   }) {
     var lightbox__img = document.querySelector(".lightbox__img"),
       lightbox__title = document.querySelector(".lightbox__title"),
-      lightbox__subtitle = document.querySelector(".lightbox__subtitle"),
-      lightbox__snood = document.querySelector(".lightbox__snood"),
-      lightbox__figure = document.querySelector(".lightbox__figure"),
+      lightbox__comprar = document.querySelector(".lightbox__comprar"),
+      lightbox__reviews = document.querySelector(".lightbox__reviews"),
       lightbox__text = document.querySelector(".lightbox__text");
-
-    verical
-      ? lightbox__figure.classList.add("lightbox__figure--vertical")
-      : lightbox__figure.classList.remove("lightbox__figure--vertical");
     lightbox__img.src = "";
     lightbox__img.src = src;
     lightbox__img.alt = title;
     lightbox__img.title = title;
     lightbox__title.textContent = title;
-    lightbox__subtitle.textContent = subtitle;
-    lightbox__snood.textContent = year;
+    lightbox__comprar.href = comprar;
+    lightbox__reviews.href = review;
     lightbox__text.textContent = text;
   }
 
@@ -90,16 +74,7 @@
     lightbox.classList.toggle("active");
     body.classList.toggle("lightbox-active");
   }
-  function onButtonNext() {
-    index++;
-    var nextElement = document.querySelector('[data-index="' + index + '"]');
 
-    if (!nextElement) {
-      return;
-    }
-
-    GetData(nextElement);
-  }
   // Export
   window.Lightbox = Constructor();
 })();
