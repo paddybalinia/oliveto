@@ -914,6 +914,13 @@ input {
   .who_are {
     padding: 80px 0;
   }
+  .who_are__item--invert {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: right;
+  }
   .who_are__figure {
     width: 600px;
     -webkit-box-flex: 0;
@@ -935,7 +942,7 @@ input {
   .who_are__feature {
     gap: 20px;
     font-size: 25px;
-    max-width: 520px;
+    max-width: 540px;
   }
   .who_are__footer {
     margin: 15px 0 0;

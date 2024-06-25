@@ -66,6 +66,11 @@
     .who_are {
         padding: 80px 0;
 
+        &__item--invert {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+
         &__figure {
             width: 600px;
             flex: 0 0 600px;
@@ -90,7 +95,7 @@
         &__feature {
             gap: 20px;
             font-size: 25px;
-            max-width: 520px;
+            max-width: 540px;
         }
 
         &__footer {
