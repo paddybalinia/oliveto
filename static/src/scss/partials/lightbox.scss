@@ -52,15 +52,14 @@
 
     &__nav {
         position: absolute;
-        right: 38px;
-        top: 48px;
-        right: 8px;
         top: 8px;
+        left: 8px;
         height: 50px;
         width: 50px;
+        transform: rotate(45deg);
 
         &__svg {
-            width: 20px;
+            width: 26px;
         }
     }
 
@@ -106,6 +105,7 @@
     &__bottom__a {
         color: black;
         border-bottom: 1px solid black;
+        font-size: 19px;
         padding-bottom: 5px;
     }
 }
@@ -168,8 +168,10 @@
         }
 
         &__nav {
-            top: 32px;
-            right: 21px;
+            bottom: 32px;
+            left: 21px;
+            bottom: 0;
+            top: inherit;
         }
 
         &__figure {
@@ -182,20 +184,20 @@
 
 
         &__data {
-            padding: 100px 52px 0;
+            padding: 60px 52px 0;
             gap: 26px;
             width: 100%;
         }
 
         &__title {
-            font: 300 45px/52px var(--font-family);
-            margin: 0 0 16px;
+            font: 400 45px/52px var(--font-family);
+            margin: 0 0 5px;
         }
 
 
 
         &__text {
-            font: 200 16px/26px var(--font-family);
+            font: 400 19px/26px var(--font-family);
             max-width: 465px;
         }
 
@@ -221,7 +223,8 @@
         }
 
         &__nav {
-            top: 12px;
+            bottom: 0;
+            top: inherit;
         }
 
         &__title {
@@ -247,15 +250,16 @@
 
         &__nav {
             position: absolute;
-            right: 38px;
-            top: 48px;
-            right: 8px;
-            top: 8px;
+
+            left: 8px;
+            bottom: 8px;
             height: 50px;
             width: 50px;
+            bottom: 0;
+            top: inherit;
 
             &__svg {
-                width: 20px;
+                width: 26px;
             }
         }
 

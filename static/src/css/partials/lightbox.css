@@ -61,15 +61,15 @@
 }
 .lightbox__nav {
   position: absolute;
-  right: 38px;
-  top: 48px;
-  right: 8px;
   top: 8px;
+  left: 8px;
   height: 50px;
   width: 50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .lightbox__nav__svg {
-  width: 20px;
+  width: 26px;
 }
 .lightbox__data {
   position: relative;
@@ -113,6 +113,7 @@
 .lightbox__bottom__a {
   color: black;
   border-bottom: 1px solid black;
+  font-size: 19px;
   padding-bottom: 5px;
 }
 
@@ -178,8 +179,10 @@
     max-width: 1236px;
   }
   .lightbox__nav {
-    top: 32px;
-    right: 21px;
+    bottom: 32px;
+    left: 21px;
+    bottom: 0;
+    top: inherit;
   }
   .lightbox__figure {
     -webkit-box-flex: 0;
@@ -192,16 +195,16 @@
             flex: 0 0 400px;
   }
   .lightbox__data {
-    padding: 100px 52px 0;
+    padding: 60px 52px 0;
     gap: 26px;
     width: 100%;
   }
   .lightbox__title {
-    font: 300 45px/52px var(--font-family);
-    margin: 0 0 16px;
+    font: 400 45px/52px var(--font-family);
+    margin: 0 0 5px;
   }
   .lightbox__text {
-    font: 200 16px/26px var(--font-family);
+    font: 400 19px/26px var(--font-family);
     max-width: 465px;
   }
 }
@@ -219,7 +222,8 @@
     gap: 10px;
   }
   .lightbox__nav {
-    top: 12px;
+    bottom: 0;
+    top: inherit;
   }
   .lightbox__title {
     font: 300 40px/47px var(--font-family);
@@ -245,15 +249,15 @@
   }
   .lightbox__nav {
     position: absolute;
-    right: 38px;
-    top: 48px;
-    right: 8px;
-    top: 8px;
+    left: 8px;
+    bottom: 8px;
     height: 50px;
     width: 50px;
+    bottom: 0;
+    top: inherit;
   }
   .lightbox__nav__svg {
-    width: 20px;
+    width: 26px;
   }
   .lightbox__data {
     position: relative;
