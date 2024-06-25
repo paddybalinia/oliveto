@@ -53,3 +53,31 @@
     font-size: 30px;
   }
 }
+@media (min-width: 1024px) {
+  .belive {
+    padding: 50px 0 15px;
+  }
+  .belive__header {
+    width: 300px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .belive__content {
+    gap: 30px;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+  }
+  .belive__label {
+    font-size: 26px;
+    margin: 36px 0 0;
+  }
+  .belive__tag {
+    font-size: 28px;
+  }
+  .belive__text {
+    font-size: 56px;
+    margin: 0 0 20px;
+  }
+}

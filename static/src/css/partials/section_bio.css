@@ -73,15 +73,48 @@
     padding: 50px 0;
   }
   .bio__row {
+    gap: 60px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .bio__content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .bio__bottom {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .bio__top_logo {
+    max-width: 335px;
+  }
+  .bio__top {
+    margin: 20px 0 0;
+  }
+  .bio__figure {
+    width: auto;
+  }
+  .bio__info {
+    gap: 10px;
+  }
+  .bio__title {
+    font-size: 45px;
+  }
+  .bio__text {
+    font-size: 22px;
+  }
+  .bio__link {
+    max-width: 130px;
+    padding-bottom: 5px;
+    font-size: 17px;
+  }
+  .bio__img {
+    max-width: 240px;
+    height: auto;
   }
 }

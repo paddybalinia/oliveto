@@ -94,6 +94,8 @@
 @media (min-width: 1024px) {
   .item_how__row {
     gap: 30px;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
   .item_how__label {
     font-size: 32px;
@@ -107,6 +109,13 @@
   }
   .item_how__image {
     height: 280px;
+  }
+  .item_how__ul {
+    font-size: 19px;
+  }
+  .item_how__ul-first {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
   }
 }
 @media (min-width: 1530px) {

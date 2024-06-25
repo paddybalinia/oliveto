@@ -1,6 +1,7 @@
 .who_are {
-    background: #F3F2F0;
     padding: 30px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 
     &__item {
         display: flex;
@@ -42,6 +43,7 @@
         font-size: 18px;
         border-bottom: 1px solid black;
         display: inline-block;
+        padding: 0 0 5px;
         width: auto;
     }
 }
@@ -62,11 +64,41 @@
 
 @media (min-width: 1024px) {
     .who_are {
-        padding: 30px 0;
+        padding: 80px 0;
 
         &__figure {
             width: 600px;
             flex: 0 0 600px;
+        }
+
+        &__item {
+            gap: 50px;
+        }
+
+        &__title {
+            margin: 50px 0 30px;
+            font-size: 54px;
+
+        }
+
+        &__content {
+            font-size: 17px;
+            max-width: 560px;
+            line-height: 27px;
+        }
+
+        &__feature {
+            gap: 20px;
+            font-size: 25px;
+            max-width: 520px;
+        }
+
+        &__footer {
+            margin: 15px 0 0;
+        }
+
+        &__button {
+            font-size: 20px;
         }
     }
 }

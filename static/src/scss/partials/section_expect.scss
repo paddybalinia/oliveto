@@ -32,6 +32,39 @@
 
 @media (min-width: 768px) {}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .expect {
+        padding: 100px 0 50px;
+
+        &__logo {
+            height: auto;
+            left: -200px;
+            width: 540px;
+        }
+
+        &__title {
+            padding: 210px 0 70px 0;
+            display: block;
+            font-size: 34px;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__content-right {
+            font-size: 67px;
+            margin: 10px 0 30px;
+            text-align: left;
+            margin: 50px 0 90px;
+        }
+
+        &__bottom {
+            font-size: 24px;
+        }
+    }
+}
 
 @media (min-width: 1440px) {}

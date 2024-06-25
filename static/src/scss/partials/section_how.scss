@@ -90,6 +90,8 @@
     .item_how {
         &__row {
             gap: 30px;
+            padding-bottom: 80px;
+            padding-top: 80px;
         }
 
         &__label {
@@ -107,6 +109,15 @@
 
         &__image {
             height: 280px;
+        }
+
+        &__ul {
+
+            font-size: 19px;
+
+            &-first {
+                flex-basis: 0%;
+            }
         }
     }
 }
