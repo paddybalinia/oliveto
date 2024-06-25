@@ -62,12 +62,51 @@
         padding: 50px 0;
 
         &__row {
-
+            gap: 60px;
             flex-direction: row;
+        }
+
+        &__content {
+            justify-content: space-between;
         }
 
         &__bottom {
             flex-direction: row;
+        }
+
+        &__top_logo {
+            max-width: 335px;
+        }
+
+        &__top {
+            margin: 20px 0 0;
+        }
+
+        &__figure {
+            width: auto;
+        }
+
+        &__info {
+            gap: 10px;
+        }
+
+        &__title {
+            font-size: 45px;
+        }
+
+        &__text {
+            font-size: 22px;
+        }
+
+        &__link {
+            max-width: 130px;
+            padding-bottom: 5px;
+            font-size: 17px;
+        }
+
+        &__img {
+            max-width: 240px;
+            height: auto;
         }
     }
 }

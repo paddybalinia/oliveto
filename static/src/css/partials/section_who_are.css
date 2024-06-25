@@ -1,6 +1,7 @@
 .who_are {
-  background: #F3F2F0;
   padding: 30px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .who_are__item {
   display: -webkit-box;
@@ -50,6 +51,7 @@
   font-size: 18px;
   border-bottom: 1px solid black;
   display: inline-block;
+  padding: 0 0 5px;
   width: auto;
 }
 
@@ -71,12 +73,35 @@
 }
 @media (min-width: 1024px) {
   .who_are {
-    padding: 30px 0;
+    padding: 80px 0;
   }
   .who_are__figure {
     width: 600px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 600px;
             flex: 0 0 600px;
+  }
+  .who_are__item {
+    gap: 50px;
+  }
+  .who_are__title {
+    margin: 50px 0 30px;
+    font-size: 54px;
+  }
+  .who_are__content {
+    font-size: 17px;
+    max-width: 560px;
+    line-height: 27px;
+  }
+  .who_are__feature {
+    gap: 20px;
+    font-size: 25px;
+    max-width: 520px;
+  }
+  .who_are__footer {
+    margin: 15px 0 0;
+  }
+  .who_are__button {
+    font-size: 20px;
   }
 }

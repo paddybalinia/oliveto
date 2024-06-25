@@ -31,3 +31,40 @@
   margin: 10px 0 30px;
   text-align: right;
 }
+
+@media (min-width: 1024px) {
+  .expect {
+    padding: 100px 0 50px;
+  }
+  .expect__logo {
+    height: auto;
+    left: -200px;
+    width: 540px;
+  }
+  .expect__title {
+    padding: 210px 0 70px 0;
+    display: block;
+    font-size: 34px;
+  }
+  .expect__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .expect__content-right {
+    font-size: 67px;
+    margin: 10px 0 30px;
+    text-align: left;
+    margin: 50px 0 90px;
+  }
+  .expect__bottom {
+    font-size: 24px;
+  }
+}

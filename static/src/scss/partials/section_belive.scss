@@ -55,6 +55,35 @@
 
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    .belive {
+        padding: 50px 0 15px;
+
+        &__header {
+            width: 300px;
+            flex: 1;
+        }
+
+        &__content {
+            gap: 30px;
+            flex: 5;
+        }
+
+        &__label {
+            font-size: 26px;
+            margin: 36px 0 0;
+        }
+
+        &__tag {
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 56px;
+            margin: 0 0 20px;
+        }
+    }
+}
 
 @media (min-width: 1440px) {}
