@@ -828,6 +828,7 @@ input {
   .belive__text {
     font-size: 56px;
     margin: 0 0 20px;
+    min-height: 185px;
   }
 }
 .who_are {
