@@ -68,14 +68,8 @@ function optimizeFonts() {
 }
 
 const jsFiles = [
-  "static/src/js/partials/Header.js",
-  // "static/src/js/partials/LazyLoadImg.js",
-  // "static/src/js/partials/ScrollIntoView.js",
-  // "static/src/js/partials/ViewportObserver.js",
-  // "static/src/js/partials/LineExperience.js",
-  // "static/src/js/partials/Paralax.js",
-  // "static/src/js/partials/WorkEffect.js",
-  // "static/src/js/partials/TyperText.js",
+  "static/src/js/partials/WhoWeAre.js",
+  // "static/src/js/partials/Lightbox.js",
 ];
 
 // const contactJsFiles = ["static/src/js/partials/ContactForm.js"];

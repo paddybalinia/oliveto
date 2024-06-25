@@ -47,7 +47,7 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
-  gap: 0;
+  gap: 12px;
   position: relative !important;
 }
 .swiper-pagination .swiper-pagination-bullet {
@@ -57,12 +57,18 @@
   height: 8px;
   width: 42px;
 }
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #AED27F !important;
+}
 
 @media (min-width: 768px) {
   .pager {
     gap: 8px;
   }
   .pager__a {
+    width: 95px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
     width: 95px;
   }
 }

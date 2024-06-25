@@ -139,7 +139,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
-  gap: 0;
+  gap: 12px;
   position: relative !important;
 }
 .swiper-pagination .swiper-pagination-bullet {
@@ -149,12 +149,18 @@ input {
   height: 8px;
   width: 42px;
 }
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #AED27F !important;
+}
 
 @media (min-width: 768px) {
   .pager {
     gap: 8px;
   }
   .pager__a {
+    width: 95px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
     width: 95px;
   }
 }
@@ -524,7 +530,7 @@ input {
   }
   .item_how__content {
     font-size: 22px;
-    min-height: 169px;
+    min-height: 190px;
     gap: 4px;
   }
   .item_how__header {
@@ -908,6 +914,13 @@ input {
   .who_are {
     padding: 80px 0;
   }
+  .who_are__item--invert {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: right;
+  }
   .who_are__figure {
     width: 600px;
     -webkit-box-flex: 0;
@@ -929,7 +942,7 @@ input {
   .who_are__feature {
     gap: 20px;
     font-size: 25px;
-    max-width: 520px;
+    max-width: 540px;
   }
   .who_are__footer {
     margin: 15px 0 0;
@@ -940,16 +953,14 @@ input {
 }
 .books {
   padding: 30px 0;
+  position: relative;
+  overflow: hidden;
 }
-.books__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.books .swiper-wrapper {
+  padding-bottom: 50px;
+}
+.books .swiper-slide {
+  max-width: 300px;
 }
 .books_item {
   max-width: 300px;
@@ -973,6 +984,21 @@ input {
   height: 30px;
 }
 
+@media (min-width: 1024px) {
+  .books_item {
+    max-width: 480px;
+    height: 480px;
+  }
+  .books .swiper-slide {
+    max-width: 480px;
+  }
+  .books__btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 23px 30px;
+  }
+}
 .bio {
   background: #F3F2F0;
   padding: 30px 0;
@@ -1100,16 +1126,8 @@ input {
 
 .interview {
   padding: 30px 0;
-}
-.interview__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  position: relative;
+  overflow: hidden;
 }
 .interview__img {
   width: 100%;
@@ -1140,6 +1158,9 @@ input {
   .interview {
     padding: 70px 0 50px;
   }
+  .interview .swiper-slide {
+    max-width: 530px;
+  }
   .interview__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1168,6 +1189,7 @@ input {
     -webkit-box-flex: 7;
         -ms-flex: 7;
             flex: 7;
+    min-height: 104px;
   }
   .interview__item {
     max-width: 650px;
