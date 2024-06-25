@@ -1453,19 +1453,79 @@
 
         <section class="books">
             <div class="row books__row">
-                <div class="books_item">
-                    <img src="static/dist/images/books/2x/libro-5@2x.jpg" class="books_item__img" width="649"
-                        height="617" alt="book 1" title="book 1" loading="lazy">
-                    <button type="button" class="books_item__btn">
-                        <svg height="54" width="54" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 54.52 54.52">
-                            <path d="M27.26 0v54.52m27.26-27.26H0"
-                                style="fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:3px" />
-                        </svg>
-                    </button>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="books_item">
+                                <img src="static/dist/images/books/2x/libro-5@2x.jpg" class="books_item__img"
+                                    width="649" height="617" alt="book 1" title="book 1" loading="lazy">
+                                <button type="button" class="books_item__btn">
+                                    <svg height="54" width="54" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 54.52 54.52">
+                                        <path d="M27.26 0v54.52m27.26-27.26H0"
+                                            style="fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:3px" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="books_item">
+                                <img src="static/dist/images/books/2x/libro-4@2x.jpg" class="books_item__img"
+                                    width="649" height="617" alt="book 1" title="book 1" loading="lazy">
+                                <button type="button" class="books_item__btn">
+                                    <svg height="54" width="54" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 54.52 54.52">
+                                        <path d="M27.26 0v54.52m27.26-27.26H0"
+                                            style="fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:3px" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="books_item">
+                                <img src="static/dist/images/books/2x/libro-3@2x.jpg" class="books_item__img"
+                                    width="649" height="617" alt="book 1" title="book 1" loading="lazy">
+                                <button type="button" class="books_item__btn">
+                                    <svg height="54" width="54" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 54.52 54.52">
+                                        <path d="M27.26 0v54.52m27.26-27.26H0"
+                                            style="fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:3px" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="books_item">
+                                <img src="static/dist/images/books/2x/libro-2@2x.jpg" class="books_item__img"
+                                    width="649" height="617" alt="book 1" title="book 1" loading="lazy">
+                                <button type="button" class="books_item__btn">
+                                    <svg height="54" width="54" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 54.52 54.52">
+                                        <path d="M27.26 0v54.52m27.26-27.26H0"
+                                            style="fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:3px" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="books_item">
+                                <img src="static/dist/images/books/2x/libro-1@2x.jpg" class="books_item__img"
+                                    width="649" height="617" alt="book 1" title="book 1" loading="lazy">
+                                <button type="button" class="books_item__btn">
+                                    <svg height="54" width="54" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 54.52 54.52">
+                                        <path d="M27.26 0v54.52m27.26-27.26H0"
+                                            style="fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:3px" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
-                <ul class="pager pager--left">
+                <!-- <ul class="pager pager--left">
                     <li class="pager__li">
                         <a href="#" class="pager__a" title="slide 1" rel="noopener noreferrer"></a>
                     </li>
@@ -1475,7 +1535,7 @@
                     <li class="pager__li">
                         <a href="#" class="pager__a" title="slide 3" rel="noopener noreferrer"></a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
 
@@ -1662,6 +1722,18 @@
                     believe.slideTo(slideIndex);
                 });
             });
+        });
+
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            slidesPerView: "auto",
+            spaceBetween: 30,
+
         });
     </script>
     <script>
