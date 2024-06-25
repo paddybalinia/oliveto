@@ -68,4 +68,7 @@
   .pager__a {
     width: 95px;
   }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 95px;
+  }
 }
