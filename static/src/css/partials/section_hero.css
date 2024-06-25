@@ -26,8 +26,3 @@
     font-size: 185px;
   }
 }
-@media (min-width: 1440px) {
-  .section_hero__title {
-    font-size: 235px;
-  }
-}
