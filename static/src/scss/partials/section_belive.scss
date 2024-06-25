@@ -73,6 +73,7 @@
         &__label {
             font-size: 26px;
             margin: 36px 0 0;
+
         }
 
         &__tag {
@@ -82,6 +83,7 @@
         &__text {
             font-size: 56px;
             margin: 0 0 20px;
+            min-height: 185px;
         }
     }
 }

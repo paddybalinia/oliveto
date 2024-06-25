@@ -111,6 +111,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  font-size: 0;
 }
 .pager__a {
   background: rgba(51, 51, 51, 0.3);
@@ -118,6 +119,9 @@ input {
   height: 8px;
   width: 42px;
   display: block;
+}
+.pager__a.active {
+  background: #AED27F;
 }
 .pager--right {
   -webkit-box-pack: end;
@@ -128,6 +132,22 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  gap: 0;
+  position: relative !important;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  margin: 0 !important;
+  background: rgba(51, 51, 51, 0.3);
+  border-radius: 125px;
+  height: 8px;
+  width: 42px;
 }
 
 @media (min-width: 768px) {
@@ -407,6 +427,7 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
+  min-height: 116px;
 }
 .item_how__label {
   font: 400 21px/1 var(--font-family);
@@ -414,10 +435,23 @@ input {
 .item_how__title {
   font: 700 32px/1 var(--font-family);
 }
+.item_how__title span {
+  display: block;
+}
+.item_how__subtitle {
+  font: 700 21px/1 var(--font-family);
+}
 .item_how__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 150px;
+}
+.item_how__content--row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -490,9 +524,18 @@ input {
   }
   .item_how__content {
     font-size: 22px;
+    min-height: 169px;
+    gap: 4px;
+  }
+  .item_how__header {
+    min-height: 231px;
   }
   .item_how__image {
     height: 280px;
+  }
+  .item_how__subtitle {
+    font-size: 36px;
+    margin: 10px 0 0;
   }
   .item_how__ul {
     font-size: 19px;
@@ -785,6 +828,7 @@ input {
   .belive__text {
     font-size: 56px;
     margin: 0 0 20px;
+    min-height: 185px;
   }
 }
 .who_are {

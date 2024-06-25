@@ -16,6 +16,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
+        min-height: 116px;
     }
 
     &__label {
@@ -24,11 +25,25 @@
 
     &__title {
         font: 700 32px/1 var(--font-family);
+
+        span {
+            display: block;
+        }
+    }
+
+    &__subtitle {
+        font: 700 21px/1 var(--font-family);
     }
 
     &__content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        min-height: 150px;
+
+        &--row {
+            flex-direction: row;
+
+        }
     }
 
     &__ul {
@@ -105,10 +120,22 @@
 
         &__content {
             font-size: 22px;
+            min-height: 169px;
+            gap: 4px;
+        }
+
+        &__header {
+            min-height: 231px;
         }
 
         &__image {
             height: 280px;
+        }
+
+        &__subtitle {
+
+            font-size: 36px;
+            margin: 10px 0 0;
         }
 
         &__ul {
