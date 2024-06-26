@@ -6,6 +6,9 @@
 .books .swiper-wrapper {
   padding-bottom: 50px;
 }
+.books .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #F26D43;
+}
 .books .swiper-slide {
   max-width: 300px;
 }

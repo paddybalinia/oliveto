@@ -58,7 +58,7 @@
   width: 42px;
 }
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #AED27F !important;
+  background: #AED27F;
 }
 
 @media (min-width: 768px) {

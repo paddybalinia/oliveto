@@ -305,3 +305,16 @@
     margin-top: 20px;
   }
 }
+@media (min-width: 960px) {
+  .lightbox__nav {
+    bottom: 6px;
+  }
+  .lightbox__nav__svg {
+    width: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .lightbox__figure {
+    height: 556px;
+  }
+}

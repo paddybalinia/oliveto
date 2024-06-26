@@ -1,3 +1,6 @@
+.expect {
+  padding: 0 0 30px;
+}
 .expect__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
