@@ -124,6 +124,7 @@
     font-size: 22px;
     min-height: 205px;
     gap: 4px;
+    max-width: 1030px;
   }
   .item_how__header {
     min-height: 231px;
@@ -149,10 +150,7 @@
     top: 50px;
   }
   .item_how__title {
-    font-size: 138px;
-  }
-  .item_how__content {
-    font-size: 25px;
+    font-size: 130px;
   }
   .item_how__image {
     height: 368px;
