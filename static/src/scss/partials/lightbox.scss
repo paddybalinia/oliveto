@@ -306,3 +306,23 @@
 
     }
 }
+
+@media (min-width: 960px) {
+    .lightbox {
+        &__nav {
+            bottom: 6px;
+
+            &__svg {
+                width: 35px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .lightbox {
+        &__figure {
+            height: 556px;
+        }
+    }
+}

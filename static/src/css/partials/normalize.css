@@ -23,6 +23,8 @@ a {
   text-decoration: none;
   outline: 0;
   color: white;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 h1,

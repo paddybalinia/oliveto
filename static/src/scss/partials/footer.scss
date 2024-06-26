@@ -4,6 +4,7 @@
     padding: 30px 0;
 
 
+
     &-row {
         display: flex;
         flex-direction: column;
@@ -28,6 +29,12 @@
     &__title {
         font-size: 42px;
     }
+
+    small {
+        font-size: 10px;
+        top: -5px;
+        position: relative;
+    }
 }
 
 .social {
@@ -41,6 +48,10 @@
 
     .footer {
         padding: 80px 0;
+
+        a:hover {
+            color: #AED27F;
+        }
 
         &-row {
             gap: 80px;

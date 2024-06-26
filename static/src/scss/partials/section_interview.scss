@@ -3,13 +3,18 @@
     position: relative;
     overflow: hidden;
 
+    .swiper-wrapper {
+        padding-bottom: 50px;
+    }
 
     &__img {
         width: 100%;
     }
 
     &__title {
-        // margin: 0 0 20px;
+
+        font-size: 28px;
+        margin: 0 0 15px;
     }
 
     &__item {
@@ -20,13 +25,18 @@
         padding: 25px;
     }
 
-    &__figure {}
+    // &__figure {}
 
-    &__date {}
+    // &__date {}
 
-    &__info {}
+    // &__info {}
 
-    &__subtitle {}
+
+    &__subtitle {
+        span {
+            display: block;
+        }
+    }
 
     &__lkn {
         color: #000;
@@ -71,20 +81,22 @@
         }
 
         &__subtitle {
-            font-size: 32px;
+            font-size: 29px;
             flex: 7;
-            min-height: 104px;
+            // min-height: 104px;
+
         }
 
         &__item {
             max-width: 650px;
-            gap: 25px;
+            gap: 15px;
             padding: 35px;
-            margin: 0 0 40px;
+            min-height: 450px;
         }
 
         &__date {
             font-size: 18px;
+            margin-top: 10px;
         }
 
         &__info {
@@ -92,7 +104,8 @@
             justify-content: space-between;
             flex-direction: row;
             align-items: flex-end;
-            gap: 95px;
+            gap: 30px;
+
         }
     }
 }
