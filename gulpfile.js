@@ -69,7 +69,9 @@ function optimizeFonts() {
 
 const jsFiles = [
   "static/src/js/partials/WhoWeAre.js",
-  // "static/src/js/partials/Lightbox.js",
+  "static/src/js/partials/Lightbox.js",
+  "static/src/js/plugins/swiper-bundle.min.js",
+  "static/src/js/partials/Sliders.js",
 ];
 
 // const contactJsFiles = ["static/src/js/partials/ContactForm.js"];
