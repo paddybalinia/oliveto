@@ -1,10 +1,40 @@
 .header {
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     color: white;
     width: 100%;
-    z-index: 2;
+    padding-top: 40px;
+    z-index: 100;
+
+    &.header--beforesticky {
+        position: fixed;
+        top: -65px;
+
+
+        background: #000000d1;
+        padding: 13px 0px;
+        // top: 0;
+
+        svg {
+            height: 33px;
+            top: 2px;
+            position: relative;
+        }
+
+        .header__nav {
+            font-size: 19px;
+        }
+    }
+
+    &.animation {
+        transition: all 0.2s ease-out;
+
+    }
+
+    &.fixed {
+        top: 0;
+    }
 
     &__logo {
         fill: white;
@@ -26,7 +56,7 @@
 
 @media (min-width: 768px) {
     .header {
-        top: 95px;
+
 
         &__nav {
             font-size: 16px;
@@ -34,6 +64,11 @@
             display: flex;
             align-items: center;
             display: flex;
+
+            a {
+                transition: font-size 0s ease-out;
+
+            }
         }
 
         &__logo {

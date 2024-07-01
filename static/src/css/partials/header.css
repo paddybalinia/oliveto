@@ -1,10 +1,32 @@
 .header {
   position: absolute;
-  top: 30px;
+  top: 0;
   left: 0;
   color: white;
   width: 100%;
-  z-index: 2;
+  padding-top: 40px;
+  z-index: 100;
+}
+.header.header--beforesticky {
+  position: fixed;
+  top: -65px;
+  background: rgba(0, 0, 0, 0.8196078431);
+  padding: 13px 0px;
+}
+.header.header--beforesticky svg {
+  height: 33px;
+  top: 2px;
+  position: relative;
+}
+.header.header--beforesticky .header__nav {
+  font-size: 19px;
+}
+.header.animation {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.header.fixed {
+  top: 0;
 }
 .header__logo {
   fill: white;
@@ -24,9 +46,6 @@
 }
 
 @media (min-width: 768px) {
-  .header {
-    top: 95px;
-  }
   .header__nav {
     font-size: 16px;
     gap: 16px;
@@ -37,6 +56,10 @@
         -ms-flex-align: center;
             align-items: center;
     display: flex;
+  }
+  .header__nav a {
+    -webkit-transition: font-size 0s ease-out;
+    transition: font-size 0s ease-out;
   }
   .header__logo {
     height: auto;

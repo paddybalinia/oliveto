@@ -168,11 +168,33 @@ input {
 }
 .header {
   position: absolute;
-  top: 30px;
+  top: 0;
   left: 0;
   color: white;
   width: 100%;
-  z-index: 2;
+  padding-top: 40px;
+  z-index: 100;
+}
+.header.header--beforesticky {
+  position: fixed;
+  top: -65px;
+  background: rgba(0, 0, 0, 0.8196078431);
+  padding: 13px 0px;
+}
+.header.header--beforesticky svg {
+  height: 33px;
+  top: 2px;
+  position: relative;
+}
+.header.header--beforesticky .header__nav {
+  font-size: 19px;
+}
+.header.animation {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.header.fixed {
+  top: 0;
 }
 .header__logo {
   fill: white;
@@ -192,9 +214,6 @@ input {
 }
 
 @media (min-width: 768px) {
-  .header {
-    top: 95px;
-  }
   .header__nav {
     font-size: 16px;
     gap: 16px;
@@ -205,6 +224,10 @@ input {
         -ms-flex-align: center;
             align-items: center;
     display: flex;
+  }
+  .header__nav a {
+    -webkit-transition: font-size 0s ease-out;
+    transition: font-size 0s ease-out;
   }
   .header__logo {
     height: auto;
@@ -567,7 +590,7 @@ input {
     top: 50px;
   }
   .item_how__title {
-    font-size: 130px;
+    font-size: 110px;
   }
   .item_how__image {
     height: 368px;
@@ -818,7 +841,7 @@ input {
 }
 @media (min-width: 1024px) {
   .belive {
-    padding: 50px 0 15px;
+    padding: 61px 0 15px;
   }
   .belive__header {
     width: 300px;
@@ -924,7 +947,7 @@ input {
 }
 @media (min-width: 1024px) {
   .who_are {
-    padding: 80px 0 30px;
+    padding: 61px 0 30px;
   }
   .who_are__item--invert {
     -webkit-box-orient: horizontal;
@@ -1274,6 +1297,10 @@ input {
   display: block;
 }
 .expect__title span {
+  display: block;
+}
+.expect__content__a {
+  color: black;
   display: block;
 }
 .expect__content-right {

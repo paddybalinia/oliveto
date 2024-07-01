@@ -1,6 +1,71 @@
 (function () {
   "use strict";
 
+  var Header = document.querySelector(".header"),
+    lastScrollY =
+      window.scrollY ||
+      window.pageYOffset ||
+      document.documentElement.scrollTop,
+    ticking = false;
+  // Constructor
+  function Constructor() {
+    window.addEventListener("scroll", onScroll);
+  }
+
+  function NavToggle() {
+    const Nav = document.querySelector(".nav");
+    const NavOverlay = document.querySelector(".nav__overlay");
+    Nav.classList.toggle("active");
+    NavOverlay.classList.toggle("active");
+  }
+
+  /**
+   * Evento onScroll
+   * @return void
+   */
+  function onScroll() {
+    lastScrollY =
+      window.scrollY ||
+      window.pageYOffset ||
+      document.documentElement.scrollTop;
+
+    requestTick();
+  }
+  /**
+   * Validamos que se haya ejecutado correctamente el onScroll() antes de pintar
+   * un nuevo frame.
+   * @return void
+   */
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+  /**
+   *
+   *
+   * @return void
+   */
+  function update() {
+    var scrollPosition = lastScrollY;
+
+    Header.classList[scrollPosition >= 70 ? "add" : "remove"](
+      "header--beforesticky"
+    );
+    Header.classList[scrollPosition >= 100 ? "add" : "remove"]("animation");
+
+    Header.classList[scrollPosition > 400 ? "add" : "remove"]("fixed");
+
+    ticking = false;
+  }
+  // Export
+  window.Header = Constructor();
+})();
+
+(function () {
+  "use strict";
+
   // Constructor
   function Constructor() {
     const btnToggle = document.querySelectorAll(".who_are__button");
@@ -36,7 +101,6 @@
   function Constructor() {
     const btnClose = document.querySelectorAll("[data-lightbox-close]");
     const Link = document.querySelectorAll("[data-lightbox]");
-    const lightboxNext = document.querySelector(".lightbox__next");
 
     for (let e = 0; e < btnClose.length; e++) {
       btnClose[e].addEventListener("click", CloseLightbox, false);
@@ -57,15 +121,15 @@
     var bookData = e.parentNode.querySelector(".books__data");
     var bookImg = bookData.parentNode.querySelector(".books_item__img").src;
     var bookTitle = bookData.querySelector(".book__title").textContent;
-    var bookComprar = bookData.querySelector(".book__comprar").href;
-    var bookReview = bookData.querySelector(".book__reviews").href;
+    // var bookComprar = bookData.querySelector(".book__comprar").href;
+    // var bookReview = bookData.querySelector(".book__reviews").href;
     var bookText = bookData.querySelector(".book__text").textContent;
 
     updateData({
       src: bookImg,
       title: bookTitle,
-      comprar: bookComprar,
-      review: bookReview,
+      // comprar: bookComprar,
+      // review: bookReview,
       text: bookText,
     });
   }
@@ -73,22 +137,22 @@
   function updateData({
     src = "src",
     title = "titulo",
-    comprar = "subtitulo",
-    review = "year",
+    // comprar = "subtitulo",
+    // review = "year",
     text = "text",
   }) {
     var lightbox__img = document.querySelector(".lightbox__img"),
       lightbox__title = document.querySelector(".lightbox__title"),
-      lightbox__comprar = document.querySelector(".lightbox__comprar"),
-      lightbox__reviews = document.querySelector(".lightbox__reviews"),
+      // lightbox__comprar = document.querySelector(".lightbox__comprar"),
+      // lightbox__reviews = document.querySelector(".lightbox__reviews"),
       lightbox__text = document.querySelector(".lightbox__text");
     lightbox__img.src = "";
     lightbox__img.src = src;
     lightbox__img.alt = title;
     lightbox__img.title = title;
     lightbox__title.textContent = title;
-    lightbox__comprar.href = comprar;
-    lightbox__reviews.href = review;
+    // lightbox__comprar.href = comprar;
+    // lightbox__reviews.href = review;
     lightbox__text.textContent = text;
   }
 
