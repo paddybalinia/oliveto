@@ -1,7 +1,7 @@
 {
-  "short_name": "Patricio Balina",
-  "name": "Patricio Balina",
-  "description": "Sitio web personal de Patricio Baliña",
+  "short_name": "So What?",
+  "name": "So What?",
+  "description": "Consultoría estratégica basada en evidencias",
   "icons": [
     {
       "src": "static/dist/images/apps/precomposed-128.png",
@@ -30,9 +30,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#1CD3C1",
+  "background_color": "#fff",
   "orientation": "portrait",
-  "theme_color": "#1CD3C1",
+  "theme_color": "#fff",
   "display": "standalone",
   "start_url": "/?utm_source=web_app_manifest"
 }

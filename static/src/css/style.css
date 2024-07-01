@@ -841,7 +841,7 @@ input {
 }
 @media (min-width: 1024px) {
   .belive {
-    padding: 50px 0 15px;
+    padding: 61px 0 15px;
   }
   .belive__header {
     width: 300px;
@@ -947,7 +947,7 @@ input {
 }
 @media (min-width: 1024px) {
   .who_are {
-    padding: 80px 0 30px;
+    padding: 61px 0 30px;
   }
   .who_are__item--invert {
     -webkit-box-orient: horizontal;
@@ -1297,6 +1297,10 @@ input {
   display: block;
 }
 .expect__title span {
+  display: block;
+}
+.expect__content__a {
+  color: black;
   display: block;
 }
 .expect__content-right {

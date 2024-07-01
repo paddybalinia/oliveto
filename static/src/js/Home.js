@@ -2,26 +2,13 @@
   "use strict";
 
   var Header = document.querySelector(".header"),
-    ButtonScrollUp = document.querySelector(".scroll-up"),
-    viewportHeight = window.innerHeight,
     lastScrollY =
       window.scrollY ||
       window.pageYOffset ||
       document.documentElement.scrollTop,
-    startSticky =
-      window.innerHeight ||
-      document.documentElement.clientHeight ||
-      document.body.clientHeight,
     ticking = false;
   // Constructor
   function Constructor() {
-    // const LinkToggle = document.querySelectorAll("[data-togglenav]");
-
-    // for (let e = 0; e < LinkToggle.length; e++) {
-    //   LinkToggle[e].addEventListener("click", NavToggle, false);
-    // }
-
-    alert("as");
     window.addEventListener("scroll", onScroll);
   }
 
@@ -61,46 +48,15 @@
    * @return void
    */
   function update() {
-    // const menuLinks = document.querySelectorAll(".header__ul a");
-
     var scrollPosition = lastScrollY;
-    // var updateScroll = Math.max(scrollPosition - 350 - Header.offsetHeight);
 
-    // Header.classList[scrollPosition >= 70 ? "add" : "remove"](
-    //   "header--beforesticky"
-    // );
+    Header.classList[scrollPosition >= 70 ? "add" : "remove"](
+      "header--beforesticky"
+    );
+    Header.classList[scrollPosition >= 100 ? "add" : "remove"]("animation");
 
-    if (scrollPosition > 2) {
-      Header.style.position = "fixed";
-      //   Header.style.top = updateScroll + "px";
-    }
+    Header.classList[scrollPosition > 400 ? "add" : "remove"]("fixed");
 
-    // if (updateScroll >= 0) {
-    //   Header.style.top = 0 + "px";
-    // }
-
-    // if (scrollPosition < 350) {
-    //   Header.style.position = "absolute";
-    //   Header.style.top = "0";
-    // }
-
-    //   ButtonScrollUp.classList[lastScrollY >= viewportHeight ? "add" : "remove"](
-    //     "visible"
-    //   );
-
-    //   menuLinks.forEach((link) => {
-    //     const section = document.querySelector(link.getAttribute("href"));
-    //     const bounding = section.getBoundingClientRect();
-
-    //     if (
-    //       bounding.top <= window.innerHeight / 2 &&
-    //       bounding.bottom >= window.innerHeight / 2
-    //     ) {
-    //       link.classList.add("active");
-    //     } else {
-    //       link.classList.remove("active");
-    //     }
-    //   });
     ticking = false;
   }
   // Export
@@ -145,7 +101,6 @@
   function Constructor() {
     const btnClose = document.querySelectorAll("[data-lightbox-close]");
     const Link = document.querySelectorAll("[data-lightbox]");
-    const lightboxNext = document.querySelector(".lightbox__next");
 
     for (let e = 0; e < btnClose.length; e++) {
       btnClose[e].addEventListener("click", CloseLightbox, false);
@@ -166,15 +121,15 @@
     var bookData = e.parentNode.querySelector(".books__data");
     var bookImg = bookData.parentNode.querySelector(".books_item__img").src;
     var bookTitle = bookData.querySelector(".book__title").textContent;
-    var bookComprar = bookData.querySelector(".book__comprar").href;
-    var bookReview = bookData.querySelector(".book__reviews").href;
+    // var bookComprar = bookData.querySelector(".book__comprar").href;
+    // var bookReview = bookData.querySelector(".book__reviews").href;
     var bookText = bookData.querySelector(".book__text").textContent;
 
     updateData({
       src: bookImg,
       title: bookTitle,
-      comprar: bookComprar,
-      review: bookReview,
+      // comprar: bookComprar,
+      // review: bookReview,
       text: bookText,
     });
   }
@@ -182,22 +137,22 @@
   function updateData({
     src = "src",
     title = "titulo",
-    comprar = "subtitulo",
-    review = "year",
+    // comprar = "subtitulo",
+    // review = "year",
     text = "text",
   }) {
     var lightbox__img = document.querySelector(".lightbox__img"),
       lightbox__title = document.querySelector(".lightbox__title"),
-      lightbox__comprar = document.querySelector(".lightbox__comprar"),
-      lightbox__reviews = document.querySelector(".lightbox__reviews"),
+      // lightbox__comprar = document.querySelector(".lightbox__comprar"),
+      // lightbox__reviews = document.querySelector(".lightbox__reviews"),
       lightbox__text = document.querySelector(".lightbox__text");
     lightbox__img.src = "";
     lightbox__img.src = src;
     lightbox__img.alt = title;
     lightbox__img.title = title;
     lightbox__title.textContent = title;
-    lightbox__comprar.href = comprar;
-    lightbox__reviews.href = review;
+    // lightbox__comprar.href = comprar;
+    // lightbox__reviews.href = review;
     lightbox__text.textContent = text;
   }
 
