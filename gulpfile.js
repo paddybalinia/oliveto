@@ -68,6 +68,7 @@ function optimizeFonts() {
 }
 
 const jsFiles = [
+  "static/src/js/partials/Header.js",
   "static/src/js/partials/WhoWeAre.js",
   "static/src/js/partials/Lightbox.js",
   "static/src/js/plugins/swiper-bundle.min.js",
