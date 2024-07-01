@@ -156,6 +156,14 @@ input {
 }
 
 @media (min-width: 768px) {
+  .anchor {
+    position: relative;
+    top: -60px;
+  }
+  .anchor_section {
+    padding-top: 60px;
+    margin-top: 60px;
+  }
   .pager {
     gap: 8px;
   }
@@ -414,7 +422,7 @@ input {
 @media (min-width: 1024px) {
   .section_about__row {
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 20px;
   }
   .section_about__text {
     font-size: 35px;
@@ -551,7 +559,7 @@ input {
   .item_how__row {
     gap: 30px;
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 20px;
   }
   .item_how__label {
     font-size: 32px;
@@ -817,7 +825,7 @@ input {
 
 @media (min-width: 768px) {
   .belive {
-    padding: 40px 0;
+    padding: 0 0 40px;
   }
   .belive__row {
     -webkit-box-orient: horizontal;
@@ -841,7 +849,11 @@ input {
 }
 @media (min-width: 1024px) {
   .belive {
-    padding: 61px 0 15px;
+    padding: 90px 0 15px;
+    margin-top: 0;
+  }
+  .belive .swiper {
+    margin-top: 0;
   }
   .belive__header {
     width: 300px;
@@ -1025,6 +1037,12 @@ input {
   height: 30px;
 }
 
+@media (min-width: 768px) {
+  .books {
+    padding-top: 90px;
+    margin-top: 0;
+  }
+}
 @media (min-width: 1024px) {
   .books_item {
     max-width: 480px;

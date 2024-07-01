@@ -32,7 +32,7 @@
 @media (min-width: 1024px) {
   .section_about__row {
     padding-bottom: 80px;
-    padding-top: 80px;
+    padding-top: 20px;
   }
   .section_about__text {
     font-size: 35px;

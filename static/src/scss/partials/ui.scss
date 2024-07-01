@@ -67,7 +67,22 @@
 //min-width: 1440px
 
 @media (min-width: 768px) {
+
+
     // Tablet
+
+
+    .anchor {
+        position: relative;
+        top: -60px;
+
+
+        &_section {
+            padding-top: 60px;
+            margin-top: 60px;
+
+        }
+    }
 
     .pager {
         gap: 8px;
