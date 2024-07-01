@@ -46,7 +46,12 @@
 
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .books {
+        padding-top: 90px;
+        margin-top: 0;
+    }
+}
 
 @media (min-width: 1024px) {
     .books {

@@ -62,6 +62,14 @@
 }
 
 @media (min-width: 768px) {
+  .anchor {
+    position: relative;
+    top: -60px;
+  }
+  .anchor_section {
+    padding-top: 60px;
+    margin-top: 60px;
+  }
   .pager {
     gap: 8px;
   }

@@ -32,7 +32,7 @@
 
 @media (min-width: 768px) {
   .belive {
-    padding: 40px 0;
+    padding: 0 0 40px;
   }
   .belive__row {
     -webkit-box-orient: horizontal;
@@ -56,7 +56,11 @@
 }
 @media (min-width: 1024px) {
   .belive {
-    padding: 61px 0 15px;
+    padding: 90px 0 15px;
+    margin-top: 0;
+  }
+  .belive .swiper {
+    margin-top: 0;
   }
   .belive__header {
     width: 300px;
