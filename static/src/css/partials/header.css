@@ -46,6 +46,9 @@
 }
 
 @media (min-width: 768px) {
+  .header__toggle {
+    display: none;
+  }
   .header__nav {
     font-size: 16px;
     gap: 16px;

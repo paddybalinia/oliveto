@@ -5,7 +5,7 @@
 
 .item_how {
     &__row {
-        padding-top: 40px;
+        padding-top: 80px;
         padding-bottom: 40px;
         display: flex;
         flex-direction: column;
@@ -105,10 +105,11 @@
 
 @media (min-width: 1024px) {
     .item_how {
+
         &__row {
             gap: 30px;
             padding-bottom: 80px;
-            padding-top: 20px;
+            padding-top: 40px;
         }
 
         &__label {

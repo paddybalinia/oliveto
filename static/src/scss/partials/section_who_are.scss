@@ -1,5 +1,5 @@
 .who_are {
-    padding: 30px 0;
+    padding: 61px 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 
@@ -12,6 +12,10 @@
 
     &__item--invert {
         margin-top: 30px;
+    }
+
+    &__figure {
+        padding: 0 50px;
     }
 
     &__img {
@@ -32,7 +36,7 @@
     }
 
     &__content {
-        display: none;
+        line-height: 21px;
         flex-direction: column;
 
         &.active {
@@ -50,13 +54,14 @@
         border-bottom: 1px solid black;
         display: inline-block;
         padding: 0 0 5px;
+        display: none;
         width: auto;
     }
 }
 
 @media (min-width: 768px) {
     .who_are {
-        padding: 30px 0;
+        padding: 61px 0;
 
         &__item {
             flex-direction: row;
@@ -78,8 +83,9 @@
         }
 
         &__figure {
-            width: 600px;
             flex: 0 0 600px;
+            width: 600px;
+            padding: 0 80px;
         }
 
         &__item {

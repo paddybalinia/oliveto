@@ -3,7 +3,7 @@
 }
 
 .item_how__row {
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,7 +111,7 @@
   .item_how__row {
     gap: 30px;
     padding-bottom: 80px;
-    padding-top: 20px;
+    padding-top: 40px;
   }
   .item_how__label {
     font-size: 32px;

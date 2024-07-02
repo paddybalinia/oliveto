@@ -9,6 +9,11 @@
     ticking = false;
   // Constructor
   function Constructor() {
+    const LinkToggle = document.querySelectorAll("[data-togglenav]");
+
+    for (let e = 0; e < LinkToggle.length; e++) {
+      LinkToggle[e].addEventListener("click", NavToggle, false);
+    }
     window.addEventListener("scroll", onScroll);
   }
 
