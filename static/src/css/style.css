@@ -161,7 +161,7 @@ input {
     top: -60px;
   }
   .anchor_section {
-    padding-top: 60px;
+    padding-top: 80px;
     margin-top: 60px;
   }
   .pager {
@@ -559,7 +559,7 @@ input {
   .item_how__row {
     gap: 30px;
     padding-bottom: 80px;
-    padding-top: 20px;
+    padding-top: 40px;
   }
   .item_how__label {
     font-size: 32px;
@@ -849,7 +849,7 @@ input {
 }
 @media (min-width: 1024px) {
   .belive {
-    padding: 90px 0 15px;
+    padding: 110px 0 15px;
     margin-top: 0;
   }
   .belive .swiper {
@@ -1040,7 +1040,7 @@ input {
 
 @media (min-width: 768px) {
   .books {
-    padding-top: 90px;
+    padding-top: 110px;
     margin-top: 0;
   }
 }
