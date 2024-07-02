@@ -1,5 +1,5 @@
 .who_are {
-    padding: 30px 0;
+    padding: 61px 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 
@@ -12,6 +12,10 @@
 
     &__item--invert {
         margin-top: 30px;
+    }
+
+    &__figure {
+        padding: 0 50px;
     }
 
     &__img {
@@ -32,6 +36,7 @@
     }
 
     &__content {
+        line-height: 21px;
         flex-direction: column;
 
         &.active {
@@ -56,7 +61,7 @@
 
 @media (min-width: 768px) {
     .who_are {
-        padding: 30px 0;
+        padding: 61px 0;
 
         &__item {
             flex-direction: row;

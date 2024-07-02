@@ -1,5 +1,5 @@
 .who_are {
-  padding: 30px 0;
+  padding: 61px 0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
@@ -15,6 +15,9 @@
 }
 .who_are__item--invert {
   margin-top: 30px;
+}
+.who_are__figure {
+  padding: 0 50px;
 }
 .who_are__img {
   max-width: 100%;
@@ -36,6 +39,7 @@
   font-size: 22px;
 }
 .who_are__content {
+  line-height: 21px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -61,7 +65,7 @@
 
 @media (min-width: 768px) {
   .who_are {
-    padding: 30px 0;
+    padding: 61px 0;
   }
   .who_are__item {
     -webkit-box-orient: horizontal;
