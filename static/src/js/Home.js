@@ -12,13 +12,6 @@
     window.addEventListener("scroll", onScroll);
   }
 
-  function NavToggle() {
-    const Nav = document.querySelector(".nav");
-    const NavOverlay = document.querySelector(".nav__overlay");
-    Nav.classList.toggle("active");
-    NavOverlay.classList.toggle("active");
-  }
-
   /**
    * Evento onScroll
    * @return void
