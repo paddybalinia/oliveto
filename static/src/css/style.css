@@ -447,9 +447,10 @@ input {
 }
 .section_hero {
   background: #000;
-  background: url("../images/hero/1x/bg-hero-100.jpg") no-repeat center;
   background-size: cover;
   color: white;
+  position: relative;
+  overflow: hidden;
   height: 100vh;
 }
 .section_hero__title {
@@ -459,8 +460,26 @@ input {
   font-size: 75px;
   max-width: 240px;
 }
+.section_hero__container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section_hero__video {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .section_hero .row {
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
