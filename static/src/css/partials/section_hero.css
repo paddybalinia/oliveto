@@ -6,6 +6,10 @@
   overflow: hidden;
   height: 100vh;
 }
+.section_hero .hero_swiper .swiper-container,
+.section_hero .hero_swiper {
+  height: 100vh;
+}
 .section_hero__title {
   position: absolute;
   bottom: 230px;
@@ -33,6 +37,21 @@
   height: 100%;
   position: relative;
   z-index: 2;
+  pointer-events: none;
+  top: 0;
+  position: absolute;
+}
+.section_hero .swiper-pagination {
+  bottom: 89px;
+  top: inherit;
+  bottom: 50px;
+  top: inherit;
+}
+.section_hero .swiper-pagination-bullet {
+  background: black;
+}
+.section_hero .swiper-pagination-bullet.active {
+  background: #aed27f;
 }
 
 @media (min-width: 768px) {
