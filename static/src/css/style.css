@@ -457,6 +457,12 @@ input {
 .section_hero .hero_swiper {
   height: 100vh;
 }
+.section_hero__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 .section_hero__title {
   position: absolute;
   bottom: 230px;
@@ -1321,15 +1327,26 @@ input {
 .interview .swiper-wrapper {
   padding-bottom: 50px;
 }
-.interview__img {
+.interview__figure {
+  padding-top: 56.25%;
+  position: relative;
   width: 100%;
+}
+.interview__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .interview__title {
   font-size: 28px;
   margin: 0 0 15px;
 }
 .interview__item {
-  background: #F3F2F0;
+  background: #f3f2f0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
