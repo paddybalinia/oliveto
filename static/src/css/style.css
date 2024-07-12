@@ -457,6 +457,12 @@ input {
 .section_hero .hero_swiper {
   height: 100vh;
 }
+.section_hero__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 .section_hero__title {
   position: absolute;
   bottom: 230px;
