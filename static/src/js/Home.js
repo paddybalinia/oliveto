@@ -237,6 +237,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			el: '.pager',
 			clickable: true,
 		},
+		autoplay: {
+			delay: 5000,
+		},
 		slidesPerView: 'auto',
 		// spaceBetween: 30,
 	});
